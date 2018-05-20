@@ -1,10 +1,10 @@
-Xilinx Repo Manifests for the Yocto Project Build System
+Soccentric Repo Manifests for the Yocto Project Build System
 =============================================
 This repository provides Repo manifests to setup the Yocto build system for
-supported Xilinx products.
+supported Soccentric products.
 
 The Yocto Project allows the creation of custom linux distributions for
-embedded systems, including Xilinx-based systems.  It is a collection of git
+embedded systems, including Soccentric-based systems.  It is a collection of git
 repositories known as *layers* each of which provides *recipes* to build
 software packages as well as configuration information.
 
@@ -38,13 +38,13 @@ with the help flag.
 
 Create an empty directory to hold your working files:
 
-    $ XILINX_SOURCES=/path/to/xilinx/sources
-    $ mkdir -p $XILINX_SOURCES
-    $ cd $XILINX_SOURCES
+    $ soccentric_SOURCES=/path/to/soccentric/sources
+    $ mkdir -p $soccentric_SOURCES
+    $ cd $soccentric_SOURCES
 
 To test out the release branch type:
 
-    $ repo init -u git://github.com/Xilinx/yocto-manifests.git -b rel-v2017.3
+    $ repo init -u git://github.com/Soccentric/yocto-manifests.git -b rel-v2017.3
     $ repo sync
 
 A successful initialization will end with a message stating that Repo is
@@ -75,7 +75,7 @@ different repositories and branches or pull in additional meta-layers.
 
 Clone this repository (or fork it on github):
 
-    $ git clone git://github.com/Xilinx/yocto-manifests.git
+    $ git clone git://github.com/Soccentric/yocto-manifests.git
 
 Make your changes (and contribute them back if they are generally useful), and
 then re-initialize your repo client
